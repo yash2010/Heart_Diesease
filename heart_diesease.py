@@ -51,10 +51,6 @@ scaler = StandardScaler()
 x = scaler.fit_transform(x)
 data = np.hstack((x,np.reshape(y, (-1, 1))))
 
-#over = RandomOverSampler()
-#x,y = over.fit_resample(x, y)
-#data = np.hstack((x, np.reshape(y, (-1, 1))))
-#transformed_df = pd.DataFrame(data, columns=df.columns)
 
 x_train, x_temp, y_train, y_temp = train_test_split(x, y, test_size=0.1, random_state=0)
 x_valid, x_test, y_valid, y_test = train_test_split(x_temp, y_temp, test_size=0.5, random_state=0)
