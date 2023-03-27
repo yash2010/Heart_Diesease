@@ -30,15 +30,15 @@ df["ca"] = pd.to_numeric(df["ca"], errors='coerce')
 df["thal"] = pd.to_numeric(df["thal"], errors='coerce')
 df["num"] = pd.to_numeric(df["num"], errors="coerce")
 
-#for i in range(len(df.columns[:-1])):
-#    label = df.columns[i]
-#    for num in range(5):
-#        plt.hist(df[df["num"] == num][label], label=f"cancer {num}", alpha=0.7, density = True, bins =15)
-#    plt.title(label)
-#    plt.xlabel(label)
-#    plt.ylabel("N")
-#    plt.legend()
-#   plt.show()
+for i in range(len(df.columns[:-1])):
+    label = df.columns[i]
+    for num in range(5):
+        plt.hist(df[df["num"] == num][label], label=f"cancer {num}", alpha=0.7, density = True, bins =15)
+    plt.title(label)
+    plt.xlabel(label)
+    plt.ylabel("N")
+    plt.legend()
+   plt.show()
 df = df.dropna()
 x = df[df.columns[:-1]].values
 y = df[df.columns[-1]].values
