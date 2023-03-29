@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use("Agg")
+matplotlib.use("Agg")  #comment out this line if you want to see the plots
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
