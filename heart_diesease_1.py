@@ -84,7 +84,7 @@ thal = float(input("Enter thalassemia (3 for normal, 6 for fixed defect, 7 for r
 
 
 scaler = StandardScaler()
-input_data = scaler.transform([[age, sex, cp, threstbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
+input_data = scaler.fit_transform([[age, sex, cp, threstbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
 
 
 prediction = model.predict(input_data)
