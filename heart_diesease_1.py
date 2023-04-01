@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from keras import regularizers
 
 
-df = pd.read_csv("heart.csv").astype(int)
+df = pd.read_csv("heart.csv")
 print(df.head())
 
 print(df.dtypes)
