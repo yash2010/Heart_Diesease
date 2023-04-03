@@ -80,7 +80,7 @@ exang = float(input("Enter exercise induced angina (1 for yes, 0 for no): "))
 oldpeak = float(input("Enter ST depression induced by exercise relative to rest: "))
 slope = float(input("Enter the slope of the peak exercise ST segment (0-2): "))
 ca = float(input("Enter number of major vessels colored by fluoroscopy (0-3): "))
-thal = float(input("Enter thalassemia (3 for normal, 6 for fixed defect, 7 for reversable defect): "))
+thal = float(input("Enter thalassemia (0 for normal, 1 for fixed defect, 2 for reversable defect): "))
 
 
 scaler = StandardScaler()
